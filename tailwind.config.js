@@ -13,7 +13,9 @@ module.exports = {
       transparent: "transparent",
 
       dark: "#606060",
+      darker: "#3e3e3e",
       primary: "#85D79C",
+      light: "#D0F7DB",
 
       black: "#000",
       white: "#fff",
@@ -27,7 +29,8 @@ module.exports = {
         600: "#718096",
         700: "#4a5568",
         800: "#2d3748",
-        900: "#1a202c"
+        900: "#1a202c",
+        light: "#767676"
       },
       red: {
         100: "#fff5f5",
