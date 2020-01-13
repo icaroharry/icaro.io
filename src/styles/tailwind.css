@@ -10983,6 +10983,14 @@ video {
   z-index: auto;
 }
 
+a {
+  font-weight: bold;
+}
+
+p {
+  padding-bottom: 10px;
+}
+
 @media (min-width: 640px){
   .sm\:sr-only{
     position: absolute;

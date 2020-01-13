@@ -6,3 +6,11 @@
 @tailwind components;
 
 @tailwind utilities;
+
+a {
+  font-weight: bold;
+}
+
+p {
+  padding-bottom: 10px;
+}
