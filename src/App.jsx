@@ -333,7 +333,12 @@ function App() {
               <LinkedinIcon />
             </div>
           </div>
-          <div className="font-mono text-xs w-full px-10 text-center sm:text-left sm:px-0 mt-5 sm:mt-0 sm:w-2/3 justify-end text-white content-center">
+          <div
+            onClick={() =>
+              window.open("https://github.com/icaroharry/icaro.io", "blank")
+            }
+            className="cursor-pointer font-mono text-xs w-full px-10 text-center sm:text-left sm:px-0 mt-5 sm:mt-0 sm:w-2/3 justify-end text-white content-center"
+          >
             <span>
               this portfolio is released under the MIT license. Feel free to
               check the code at my GitHub :)
