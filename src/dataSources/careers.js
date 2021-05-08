@@ -1,6 +1,35 @@
 export default [
   {
-    date: "March 2019 - Present",
+    date: "July 2020 - present",
+    picture: "trybe.png",
+    name: "Trybe",
+    location: "Remote, 🇧🇷 Brasil",
+    description: `[Trybe](https://betrybe.com) is a web development school that has a genuine commitment to the professional success of its students. With the Shared Success Model, those who study at Trybe have the option of paying only when they are already working.
+      \nThere are more than 1500 hours of training, distributed between content study, online and live classes, individual and group projects and development of soft skills.
+      \nThe school invests all the necessary resources so that people learn the technical skills of a developer person in practice, working on real challenge projects, and evolving their soft skills, in addition to offering connections to the job market and helping with hiring.
+      \nI work there as a front-end instructor. I'm responsible for teaching React through live lectures and supporting the students on the projects they have to develop.`,
+    stack: [
+      "react",
+      "react-router",
+      "redux",
+      "react-testing-library",
+      "context-api"
+    ]
+  },
+  {
+    date: "March 2020 - July 2020",
+    picture: "nata-house.jpeg",
+    name: "Nata House",
+    location: "Belo Horizonte, 🇧🇷 Brasil",
+    description: `[Nata.house](https://nata.house) is a software house specialized in the JavaScript ecosystem. It was created with the purpose of generating more value and offering a better experience for its customers while providing growth and learning for its collaborators.
+      \nAs a contractor, I helped with the development of a module in a big project for Vale. I was responsible for delivering the front-end side of it. The module was built on React using the Context API.`,
+    stack: [
+      "react",
+      "material-ui"
+    ]
+  },
+  {
+    date: "March 2019 - March 2020",
     picture: "raro.svg",
     name: "Raro Labs",
     location: "Belo Horizonte, 🇧🇷 Brasil",

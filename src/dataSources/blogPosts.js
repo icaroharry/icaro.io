@@ -1,5 +1,23 @@
 export default [
   {
+    date: "14th of May 2020",
+    picture: "flexbox-2.webp",
+    title:
+      "[PT] Entendo o flexbox - parte 2",
+    stack: ["css", "flexbox"],
+    link:
+      "https://recodifica.icaro.io/entendendo-o-flexbox-parte-2/"
+  },
+  {
+    date: "12th of May 2020",
+    picture: "flexbox-1.webp",
+    title:
+      "[PT] Entendo o flexbox - parte 1",
+    stack: ["css", "flexbox"],
+    link:
+      "https://recodifica.icaro.io/entendendo-o-flexbox-parte-1/"
+  },
+  {
     date: "21th of January 2018",
     picture: "metamask-medium.png",
     title:
@@ -41,5 +59,5 @@ export default [
     stack: ["github", "steemit", "blockchain", "open-source"],
     link:
       "https://steemit.com/steemit/@icaro/github-steemit-how-awesome-would-be-both-together"
-  }
+  },
 ];
