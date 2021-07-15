@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import React from "react";
 
-const links = ["career", "projects", "blogs"];
+const links = ["career", "projects", "blog"];
 
 export default function Navbar() {
   return (
