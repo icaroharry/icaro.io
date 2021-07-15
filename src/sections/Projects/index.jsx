@@ -1,17 +1,22 @@
 /* eslint-disable no-undef */
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from "react";
 
 // https://api.github.com/repos/octocat/hello-world
 import projectsData from "../../dataSources/projects";
 
 export default function Projects() {
   const [githubRepos, setGithubRepos] = useState([]);
-  
+
   useEffect(() => {
-    Promise.all(projectsData.map(project =>
-      fetch(`https://api.github.com/repos/${project.link.split('https://github.com/')[1]}`)
-        .then(res => res.json())
-    )).then((repos) => setGithubRepos(repos))
+    Promise.all(
+      projectsData.map((project) =>
+        fetch(
+          `https://api.github.com/repos/${
+            project.link.split("https://github.com/")[1]
+          }`
+        ).then((res) => res.json())
+      )
+    ).then((repos) => setGithubRepos(repos));
   }, []);
 
   return (
@@ -27,7 +32,7 @@ export default function Projects() {
             {projectsData.map((project, i) => (
               <div
                 key={i}
-                className="rounded-lg hover:shadow-xl my-6 shadow-lg flex cursor-pointer"
+                className="rounded-lg hover:shadow-xl my-6 shadow-lg flex cursor-pointer transition-shadow duration-100"
                 onClick={() => window.open(project.link, "blank")}
               >
                 <div
@@ -36,7 +41,7 @@ export default function Projects() {
                   {project.picture.length ? (
                     <img
                       className="h-16 sm:h-32"
-                      src={require(`../../img/${project.picture}`)}
+                      src={require(`../../img/${project.picture}`).default}
                       alt="Project"
                     />
                   ) : (
@@ -55,7 +60,7 @@ export default function Projects() {
                   <div className="flex flex-row flex-wrap font-thin font-mono text-xs sm:text-sm">
                     {project.stack.map((tech, j) => (
                       <div
-                        className={`rounded-full bg-${project.colors[1]} text-white shadow-md mr-2 p-2 my-4 flex-no-wrap hover:shadow-xl`}
+                        className={`rounded-full bg-${project.colors[1]} text-white shadow-md mr-2 p-2 my-4 flex-nowrap hover:shadow-xl transition-shadow duration-100`}
                         key={j}
                       >
                         {tech}
@@ -76,7 +81,7 @@ export default function Projects() {
                         <span className="flex items-center">
                           <img
                             className="h-5 mr-1"
-                            src={require("../../img/fork.svg")}
+                            src={require("../../img/fork.svg").default}
                             alt="Git Fork"
                           />{" "}
                           {githubRepos[i]?.forks}
@@ -92,5 +97,5 @@ export default function Projects() {
         </div>
       </div>
     </section>
-  )
+  );
 }

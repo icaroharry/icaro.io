@@ -9,7 +9,7 @@ export default function Navbar() {
       <div className="font-sans text-lg text-white">
         {links.map((link, index) => (
           <>
-            <span className="mr-2">
+            <span className={`mr-2 ${index !== 0 && "ml-4"}`}>
               <motion.span
                 whileHover={{ color: "#B69AD6" }}
                 className="cursor-pointer"
@@ -22,7 +22,7 @@ export default function Navbar() {
                 {link}
               </motion.span>
             </span>{" "}
-            {index !== links.length - 1 && `| `}
+            {index !== links.length - 1 && `|`}
           </>
         ))}
       </div>

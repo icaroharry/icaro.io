@@ -7,7 +7,7 @@ export default [
     stars: 0,
     forks: 0,
     link: "https://github.com/icaroharry/pxl.bike",
-    colors: ["light", "primary"]
+    colors: ["light", "primary"],
   },
   {
     title: "electron-metamask-boilerplate",
@@ -18,7 +18,7 @@ export default [
     stars: 54,
     forks: 35,
     link: "https://github.com/SwapyNetwork/electron-metamask-boilerplate",
-    colors: ["orange-300", "orange-600"]
+    colors: ["yellow-300", "yellow-600"],
   },
   {
     title: "sort",
@@ -28,7 +28,7 @@ export default [
     stars: 13,
     forks: 6,
     link: "https://github.com/icaroharry/sort",
-    colors: ["pink-300", "pink-600"]
+    colors: ["pink-300", "pink-600"],
   },
   {
     title: "ethereum-workshop",
@@ -38,7 +38,7 @@ export default [
     stars: 3,
     forks: 0,
     link: "https://github.com/icaroharry/ethereum-workshop",
-    colors: ["gray-300", "gray-600"]
+    colors: ["gray-300", "gray-600"],
   },
   {
     title: "you-need-an-automatic-budget",
@@ -49,6 +49,6 @@ export default [
     stars: 3,
     forks: 0,
     link: "https://github.com/icaroharry/you-need-an-automatic-budget",
-    colors: ["green-200", "green-500"]
-  }
+    colors: ["green-200", "green-500"],
+  },
 ];

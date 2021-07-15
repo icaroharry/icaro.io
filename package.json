@@ -3,17 +3,17 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@craco/craco": "^6.2.0",
     "framer-motion": "^4.1.17",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
     "react-markdown": "^4.3.1",
-    "react-scripts": "^3.4.1"
+    "react-scripts": "^4.0.1"
   },
   "scripts": {
-    "start": "npm run build:style && react-scripts start",
-    "build:style": "tailwind build src/styles/index.css -o src/styles/tailwind.css",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -32,10 +32,11 @@
     ]
   },
   "devDependencies": {
-    "autoprefixer": "^9.6.5",
-    "eslint": "^6.8.0",
+    "autoprefixer": "^9.8.6",
+    "eslint": "^7.11.0",
     "eslint-plugin-react": "^7.19.0",
+    "postcss": "^7.0.36",
     "postcss-cli": "^7.1.0",
-    "tailwindcss": "^1.1.2"
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.4"
   }
 }

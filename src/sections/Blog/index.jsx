@@ -1,5 +1,5 @@
 /* eslint-disable no-undef */
-import React from 'react';
+import React from "react";
 
 import blogPosts from "../../dataSources/blogPosts";
 
@@ -13,13 +13,13 @@ export default function Blog() {
             {blogPosts.map((blogPost, i) => (
               <div
                 key={i}
-                className="cursor-pointer rounded-lg hover:shadow-xl my-6 shadow-lg flex flex-col bg-gray-light"
+                className="cursor-pointer rounded-lg hover:shadow-xl my-6 shadow-lg flex flex-col bg-gray-light transition-shadow duration-100"
                 onClick={() => window.open(blogPost.link, "blank")}
               >
                 <div className="w-full h-40 flex items-center rounded-t-lg">
                   <img
                     className="w-full h-40 rounded-t-lg object-cover"
-                    src={require(`../../img/${blogPost.picture}`)}
+                    src={require(`../../img/${blogPost.picture}`).default}
                     alt="Job"
                   />
                 </div>
@@ -30,7 +30,7 @@ export default function Blog() {
                   <div className="flex flex-row flex-wrap font-thin font-mono text-base sm:text-lg">
                     {blogPost.stack.map((tech, j) => (
                       <div
-                        className="rounded-full bg-primary text-white shadow-md mr-2 p-2 my-4 flex-no-wrap hover:shadow-xl"
+                        className="rounded-full bg-primary text-white shadow-md mr-2 p-2 my-4 flex-nowrap hover:shadow-xl transition-shadow duration-100"
                         key={j}
                       >
                         {tech}

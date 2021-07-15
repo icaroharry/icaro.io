@@ -1,12 +1,15 @@
 /* eslint-disable no-undef */
-import React from 'react';
-import ReactMarkdown from 'react-markdown';
+import React from "react";
+import ReactMarkdown from "react-markdown";
 
 import careers from "../../dataSources/careers";
 
 export default function Career() {
   return (
-    <section id="career" className="bg-primary h-auto w-full pb-10 mt-20 lg:mt-0">
+    <section
+      id="career"
+      className="bg-primary h-auto w-full pb-10 mt-20 lg:mt-0"
+    >
       <div className="container mx-auto flex-column py-4 px-4 sm:px-24 -mt-24 md:pb-24 lg:pb-48">
         <div className="flex-1 font-sans text-center lg:text-left text-4xl sm:text-5xl lg:text-4xl xl:text-5xl text-gray-800 font-bold">
           career
@@ -27,7 +30,7 @@ export default function Career() {
                     <div className="mr-4">
                       <img
                         className="rounded-full h-16"
-                        src={require(`../../img/${job.picture}`)}
+                        src={require(`../../img/${job.picture}`).default}
                         alt="Job"
                       />
                     </div>
@@ -49,7 +52,7 @@ export default function Career() {
                       <div className="flex flex-row flex-wrap font-thin font-mono text-lg mt-4">
                         {job.stack.map((tech, j) => (
                           <div
-                            className="rounded-full bg-gray-800 text-white shadow-md mr-2 p-2 my-4 flex-no-wrap hover:shadow-xl"
+                            className="rounded-full bg-gray-800 text-white shadow-md mr-2 p-2 my-4 flex-nowrap hover:shadow-xl transition-shadow duration-100"
                             key={j}
                           >
                             {tech}
@@ -65,5 +68,5 @@ export default function Career() {
         </div>
       </div>
     </section>
-  )
+  );
 }
