@@ -2,6 +2,7 @@ export default [
   {
     date: "July 2020 - present",
     picture: "trybe.png",
+    title: "Front-end instructor",
     name: "Trybe",
     location: "Remote, 🇧🇷 Brasil",
     description: `[Trybe](https://betrybe.com) is a web development school that has a genuine commitment to the professional success of its students. With the Shared Success Model, those who study at Trybe have the option of paying only when they are already working.
@@ -13,25 +14,24 @@ export default [
       "react-router",
       "redux",
       "react-testing-library",
-      "context-api"
-    ]
+      "context-api",
+    ],
   },
   {
     date: "March 2020 - July 2020",
     picture: "nata-house.jpeg",
+    title: "Front-end developer",
     name: "Nata House",
     location: "Belo Horizonte, 🇧🇷 Brasil",
     description: `[Nata.house](https://nata.house) is a software house specialized in the JavaScript ecosystem. It was created with the purpose of generating more value and offering a better experience for its customers while providing growth and learning for its collaborators.
       \nAs a contractor, I helped with the development of a module in a big project for Vale. I was responsible for delivering the front-end side of it. The module was built on React using the Context API.`,
-    stack: [
-      "react",
-      "material-ui"
-    ]
+    stack: ["react", "material-ui"],
   },
   {
     date: "March 2019 - March 2020",
     picture: "raro.svg",
     name: "Raro Labs",
+    title: "Front-end developer",
     location: "Belo Horizonte, 🇧🇷 Brasil",
     description: `[Raro Labs](https://rarolabs.com.br) is a tech company focused on solving problems using the most suitable technology for each case. Since my first day, I got involved with challenging projects, mostly requiring Javascript solutions.
       \nI'm working on projects from banking APIs to coffee selling apps. The best part is the great team behind the company that is always helping me to grow. So it's been a great journey with a lot of learning in the way.`,
@@ -43,13 +43,14 @@ export default [
       ".net",
       "firebase",
       "figma",
-      "sql"
-    ]
+      "sql",
+    ],
   },
   {
     date: "May 2018 - Jun 2019",
     picture: "utopian.png",
     name: "Utopian",
+    title: "Front-end blockchain developer",
     location: "Remote, 🌎 Planet Earth",
     description: `[Utopian](https://steemit.com/@utopian-io) was an early staging company with a disrupting open-source technology aiming to reward open-source contributors. It was a very purpose-driven company where I had the opportunity to work with great minds from Europe, Asia, Africa, and South America towards a common goal to help open source communities grow and thrive.
       \nThe software was based in the Steem blockchain and used its mechanism to generate tokens that were then redirected to open source contributors that applied for a reward in the platform. During its existence, it generated over $1.5 million that beneficiated thousands of developers, designers, and translators all over the world.
@@ -64,13 +65,14 @@ export default [
       "IPFS",
       "react",
       "node",
-      "mongo"
-    ]
+      "mongo",
+    ],
   },
   {
     date: "Sep 2017 - May 2018",
     picture: "swapy.png",
     name: "Swapy Network",
+    title: "Front-end blockchain developer",
     location: "Belo Horizonte, 🇧🇷 Brasil",
     description: `[Swapy](https://github.com.com/SwapyNetwork) was a company aiming to connect investors with companies that lend money to individuals using the blockchain technology to reduce fees and simplify the process.
     \nAs a company in the blockchain space, we were seeking investment through an ICO so all our work was public.
@@ -86,25 +88,27 @@ export default [
       "react-native",
       "IPFS",
       "solidity",
-      "node"
-    ]
+      "node",
+    ],
   },
   {
     date: "Aug 2015 - Sep 2017",
     picture: "nebulab.png",
     name: "Nebulab",
+    title: "Front-end developer",
     location: "Remote, 🇺🇸 San Antonio - USA",
     description: `In [Nebulab](http://nebulab.io) we developed a tool to help researchers throughout the data management process that can be very complex. From data storage to contextualization, the software handled different kinds of research data and on top of that was built for a strong teamwork among lab members, including project management, chat, and role/permissions management.
       \n I worked mostly on the frontend development, using Angular 1, but I also worked in the backend side, with NodeJS, MongoDB, AWS and S3`,
-    stack: ["javascript", "angular", "nodejs", "mongodb", "AWS", "S3"]
+    stack: ["javascript", "angular", "nodejs", "mongodb", "AWS", "S3"],
   },
   {
     date: "Mar 2014 - Mar 2015",
     picture: "teknisa.png",
     name: "Teknisa",
+    title: "Developer intern",
     location: "Belo Horizonte, 🇧🇷 Brasil",
     description: `That was my first job and I was hired as an intern to work in the development of an internal tool for [Teknisa](https://teknisa.com). The software was a "visual" tool to build cross-platform apps called Developer Studio. During the 1 year that I worked there, I became the lead developer of Developer Studio and learned a lot in the process.
     \nIn this job, I worked with Angular 1, PHP, MySQL and had my first contact with simple scripts in NodeJs.`,
-    stack: ["javascript", "angular", "php", "sql", "nodejs"]
-  }
+    stack: ["javascript", "angular", "php", "sql", "nodejs"],
+  },
 ];
