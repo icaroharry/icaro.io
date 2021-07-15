@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "framer-motion": "^4.1.17",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
     "react-markdown": "^4.3.1",
