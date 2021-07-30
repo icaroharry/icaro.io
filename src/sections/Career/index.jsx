@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import ReactMarkdown from "react-markdown";
 
 import careers from "../../dataSources/careers";
+import Chip from "../../components/Chip";
 
 export default function Career() {
   const [showDetails, setShowDetails] = useState(
@@ -101,12 +102,7 @@ export default function Career() {
                             className="flex flex-row flex-wrap font-thin font-mono text-lg mt-4"
                           >
                             {job.stack.map((tech, j) => (
-                              <div
-                                className="rounded-full bg-gray-800 text-white shadow-md mr-2 p-2 my-4 flex-nowrap hover:shadow-xl transition-shadow duration-100"
-                                key={j}
-                              >
-                                {tech}
-                              </div>
+                              <Chip key={j} text={tech} index={j} />
                             ))}
                           </motion.div>
                         </>

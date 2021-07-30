@@ -30,6 +30,9 @@ export default function Header() {
           <motion.div
             initial={{ x: "120vw" }}
             animate={{ x: 0 }}
+            whileHover={{
+              rotateZ: 2,
+            }}
             transition={{ type: "spring", stiffness: 50 }}
             className="w-auto mb-10 flex flex-col items-center"
           >

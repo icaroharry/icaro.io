@@ -1,7 +1,7 @@
 /* eslint-disable no-undef */
 import React, { useEffect, useState } from "react";
+import Chip from "../../components/Chip";
 
-// https://api.github.com/repos/octocat/hello-world
 import projectsData from "../../dataSources/projects";
 
 export default function Projects() {
@@ -18,6 +18,8 @@ export default function Projects() {
       )
     ).then((repos) => setGithubRepos(repos));
   }, []);
+
+  const formatDateTime = (dateTime) => new Date(dateTime).toLocaleDateString();
 
   return (
     <section id="projects" className="bg-white h-auto w-full">
@@ -57,14 +59,17 @@ export default function Projects() {
                   <span className="font-mono text-dark font-thin text-base truncate">
                     {project.description}
                   </span>
+                  <span className="font-hairline text-gray-400 text-xs font-mono my-1">
+                    last updated at {formatDateTime(githubRepos[i]?.pushed_at)}
+                  </span>
                   <div className="flex flex-row flex-wrap font-thin font-mono text-xs sm:text-sm">
                     {project.stack.map((tech, j) => (
-                      <div
-                        className={`rounded-full bg-${project.colors[1]} text-white shadow-md mr-2 p-2 my-4 flex-nowrap hover:shadow-xl transition-shadow duration-100`}
+                      <Chip
+                        text={tech}
+                        index={j}
                         key={j}
-                      >
-                        {tech}
-                      </div>
+                        backgroundColor={project.colors[1]}
+                      />
                     ))}
                   </div>
                   <div className="block sm:flex text-lg mt-3 items-end justify-between w-full">
@@ -88,7 +93,6 @@ export default function Projects() {
                         </span>
                       )}
                     </div>
-                    {/* <span className="font-hairline text-dark text-sm">last updated at {project.lastUpdated}</span> */}
                   </div>
                 </div>
               </div>

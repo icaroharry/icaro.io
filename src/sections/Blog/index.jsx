@@ -1,5 +1,6 @@
 /* eslint-disable no-undef */
 import React from "react";
+import Chip from "../../components/Chip";
 
 import blogPosts from "../../dataSources/blogPosts";
 
@@ -29,12 +30,12 @@ export default function Blog() {
                   </span>
                   <div className="flex flex-row flex-wrap font-thin font-mono text-base sm:text-lg">
                     {blogPost.stack.map((tech, j) => (
-                      <div
-                        className="rounded-full bg-primary text-white shadow-md mr-2 p-2 my-4 flex-nowrap hover:shadow-xl transition-shadow duration-100"
+                      <Chip
+                        text={tech}
+                        index={j}
                         key={j}
-                      >
-                        {tech}
-                      </div>
+                        backgroundColor="primary"
+                      />
                     ))}
                   </div>
                   <span className="font-mono text-lg font-thin mt-4">
