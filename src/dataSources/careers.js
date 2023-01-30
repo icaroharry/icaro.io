@@ -1,7 +1,7 @@
 export default [
   {
     date: "July 2022 - Present",
-    picture: "toptal.png",
+    picture: "toptal.jpg",
     title: "Front-end engineer coach",
     name: "Toptal",
     location: "Remote, 🇺🇸 United States",
