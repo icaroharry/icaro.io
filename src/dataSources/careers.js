@@ -1,6 +1,24 @@
 export default [
   {
-    date: "July 2020 - present",
+    date: "July 2022 - Present",
+    picture: "toptal.png",
+    title: "Front-end engineer coach",
+    name: "Toptal",
+    location: "Remote, 🇺🇸 United States",
+    description: `[Toptal](https://toptal.com) Toptal is an exclusive network of the top freelance software developers, designers, finance experts, product managers, and project managers in the world.
+      \nI work there as a Front-end engineer coach, in the TopAcademy project, where we train interns to succeed on other internal teams of the company.
+      \nThe interns go through a 6-month paid internship when they learn about the core technologies used by the company, and get hands-on experience working on real-life projects.
+      \nMy job is to guide them through their internship and help them become world-class engineers. Other than that, I also work on the projects together with the interns.`,
+    stack: [
+      "react",
+      "graphql",
+      "apollo",
+      "nextjs",
+      "cypress",
+    ],
+  },
+  {
+    date: "July 2020 - July 2022",
     picture: "trybe.png",
     title: "Front-end instructor",
     name: "Trybe",
