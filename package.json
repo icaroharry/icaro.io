@@ -3,13 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@craco/craco": "^6.2.0",
+    "@craco/craco": "^7.0.0",
     "framer-motion": "^4.1.17",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
     "react-intersection-observer": "^8.32.0",
     "react-markdown": "^4.3.1",
-    "react-scripts": "^4.0.1"
+    "react-scripts": "^5.0.1"
   },
   "scripts": {
     "start": "craco start",
