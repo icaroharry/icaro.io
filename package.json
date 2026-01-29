@@ -2,42 +2,26 @@
   "name": "icaro.io",
   "version": "0.1.0",
   "private": true,
-  "dependencies": {
-    "@craco/craco": "^6.2.0",
-    "framer-motion": "^4.1.17",
-    "react": "^16.10.2",
-    "react-dom": "^16.10.2",
-    "react-intersection-observer": "^8.32.0",
-    "react-markdown": "^4.3.1",
-    "react-scripts": "^4.0.1"
-  },
   "scripts": {
-    "start": "craco start",
-    "build": "craco build",
-    "test": "craco test",
-    "eject": "react-scripts eject"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint"
   },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "dependencies": {
+    "lucide-react": "^0.563.0",
+    "next": "16.1.6",
+    "react": "19.2.3",
+    "react-dom": "19.2.3"
   },
   "devDependencies": {
-    "autoprefixer": "^9.8.6",
-    "eslint": "^7.11.0",
-    "eslint-plugin-react": "^7.19.0",
-    "postcss": "^7.0.36",
-    "postcss-cli": "^7.1.0",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.4"
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.1.6",
+    "tailwindcss": "^4",
+    "typescript": "^5"
   }
 }
