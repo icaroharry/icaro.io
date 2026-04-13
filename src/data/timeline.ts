@@ -30,7 +30,7 @@ export type TimelineEntry = {
 export const timelineEntries: TimelineEntry[] = [
   // minka_
   {
-    date: "Apr 2025 - Present",
+    date: "Apr 2025 - Mar 2026",
     sortDate: "2025-04",
     title: "Frontend Tech Lead",
     subtitle: "minka_",
